@@ -86,5 +86,19 @@ Ker je okolje bogato s funkcijami, lahko porabi več sistemskih virov v primerja
 
 ## Vzdrževanje
 
-##Lastna uporaba
+## Osnove platformIO
+
+## Lastna uporaba
+Namen moje uporabe je merjenje teže panjev. Za to uporabim load celle ki so povezani na HX711, ki pretvori analogno meritev v digitalni signal (sprememba teže) in ga posreduje mikrokrmilniku (ESP32), kjer se z ustrezno kalibracijo pretvori v meritev teže. To mertiev potem preko APIja shranim v podatkovno bazo ter jo kasneje prikažem v uporabniškem vmesniku (npr. spletni strani, android aplikaciji). 
+<br>
+<br>
+<img src="https://github.com/user-attachments/assets/9ee300e6-ad68-4ebd-a1a9-df4e3a93787c" width="300px">
+<img src="https://github.com/user-attachments/assets/01118939-83b6-4806-9ada-530aba85920e" width="300px">
+
+<img width="1165" height="182" alt="image" src="https://github.com/user-attachments/assets/acc9f79e-e815-498c-89ec-208ecb03a024" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/cbd0d3c1-b37a-412f-a700-d74435084e3d" />
+<img width="2426" height="959" alt="image" src="https://github.com/user-attachments/assets/5840895f-1f54-4982-ab10-7dc14f445244" />
+
+
+
 
