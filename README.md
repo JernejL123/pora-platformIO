@@ -88,6 +88,13 @@ Ker je okolje bogato s funkcijami, lahko porabi več sistemskih virov v primerja
 
 ## Osnove platformIO
 
+#### Ustvari projekt in izberi svoj board:
+<img src="https://github.com/user-attachments/assets/e1f51838-9e2f-4cf2-948c-d93a693aad00" width="300px">
+
+#### Funkcije (Build,Upload,Serial Monitor)
+<img width="483" height="291" alt="image" src="https://github.com/user-attachments/assets/c88c7209-817d-4edf-8669-950bf05413e2" />
+
+
 ## Lastna uporaba
 Namen moje uporabe je merjenje teže panjev. Za to uporabim load celle ki so povezani na HX711, ki pretvori analogno meritev v digitalni signal (sprememba teže) in ga posreduje mikrokrmilniku (ESP32), kjer se z ustrezno kalibracijo pretvori v meritev teže. To mertiev potem preko APIja shranim v podatkovno bazo ter jo kasneje prikažem v uporabniškem vmesniku (npr. spletni strani, android aplikaciji). 
 <br>
@@ -99,6 +106,44 @@ Namen moje uporabe je merjenje teže panjev. Za to uporabim load celle ki so pov
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/cbd0d3c1-b37a-412f-a700-d74435084e3d" />
 <img width="2426" height="959" alt="image" src="https://github.com/user-attachments/assets/5840895f-1f54-4982-ab10-7dc14f445244" />
 
+# HX711 + ESP32: deli kode
+
+
+#### Povezava HX711 s pini ESP32
+  ```cpp
+  HX711 cell;
+  const int LOADCELL_DOUT_PIN = 26; // izhod podatkov iz HX711
+  const int LOADCELL_SCK_PIN  = 27; // (Serial Clock) vhodni pin za uro
+  ```
+#### Nastavitev kalibracijskega faktorja
+  ```cpp
+  float calibration_factor = 129200;
+  ```
+
+#### Inicializacija HX711 in ničelna teža
+  ```cpp
+  void setup() {
+    Serial.begin(115200);
+  
+    cell.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
+    cell.set_scale(); // brez faktorja
+    cell.tare();      // resetira tehtnico na 0
+  }
+  ```
+
+#### Meritev teže in pošiljanje na API
+  ```cpp
+  void loop() {
+    cell.set_scale(calibration_factor); 
+    float weight = cell.get_units(5);   // povprečje 5 vzorcev
+    if(weight < 0) weight = 0.00;
+
+    Serial.print("Kilogram:");
+    Serial.println(weight); 
+    api.postWeight(weight);         
+    delay(100);
+  }
+  ```
 
 
 
