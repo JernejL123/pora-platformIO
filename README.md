@@ -1,6 +1,6 @@
 # pora-PlatformIO
 
-**PlatformIO** je odprtokodna, platformno odvisna razvojna knjižnica in okolje (*ecosystem*) za razvoj vgrajenih sistemov (*embedded systems*).  
+**PlatformIO** je odprtokodna, platformno odvisna razvojna knjižnica in okolje za razvoj vgrajenih sistemov.  
 Omogoča razvoj, prevajanje, nalaganje kode in upravljanje knjižnic za mikrokrmilnike, kot so **ESP32**, **Arduino**, **STM32** itd.
 
 V mojem projektu jo uporabljam za razvoj programske opreme za **tehtnico panjev**, ki temelji na **ESP32**, senzorju **HX711** in **load cellih**.
@@ -75,7 +75,7 @@ in PlatformIO sam prenese knjižnico, jo poveže s projektom in omogoča, da pro
 
 Širok nabor funkcij PlatformIO je lahko sprva preobremenjujoč. Začetnikom se lahko zdi nastavitev in konfiguracija bolj zapletena v primerjavi z bolj preprostimi orodji, prilagojenimi arhitekturam ali ekosistemom z eno samo ploščo (mikrokrmilnikom).
 
-#### Primer: V primerjavi z Arduino IDE, ki je zasnovan za hiter in enostaven začetek, PlatformIO zahteva več začetne konfiguracije
+#### Primer: V primerjavi z Arduino IDE, ki je zasnovan za hiter in enostaven začetek, PlatformIO zahteva več začetne konfiguracije.
 
 ### 2. Večja poraba virov
 Ker je okolje bogato s funkcijami, lahko porabi več sistemskih virov v primerjavi z minimalističnimi orodji. To je lahko problematično na slabših računalnikih.
