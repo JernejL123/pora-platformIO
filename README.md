@@ -92,7 +92,7 @@ Ker je okolje bogato s funkcijami, lahko porabi več sistemskih virov v primerja
 
 ## Vzdrževanje
 Ekipa: PlatformIO LLC <br>
-Odprtokodna platforma: glavna koda je na GitHubu
+Odprtokodna platforma: glavna koda je na GitHubu <br>
 Vzdrževalci: ekipa razvijalcev, ki redno posodablja:
 - Core (platformio-core)
 - IDE razširitve (VS Code, Atom)
