@@ -80,3 +80,11 @@ in PlatformIO sam prenese knjižnico, jo poveže s projektom in omogoča, da pro
 ### 2. Večja poraba virov
 Ker je okolje bogato s funkcijami, lahko porabi več sistemskih virov v primerjavi z minimalističnimi orodji. To je lahko problematično na slabših računalnikih.
 
+## Število uporabnikov
+
+## Časovna in prostorska zahtevnost
+
+## Vzdrževanje
+
+##Lastna uporaba
+
