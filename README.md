@@ -81,10 +81,29 @@ in PlatformIO sam prenese knjižnico, jo poveže s projektom in omogoča, da pro
 Ker je okolje bogato s funkcijami, lahko porabi več sistemskih virov v primerjavi z minimalističnimi orodji. To je lahko problematično na slabših računalnikih.
 
 ## Število uporabnikov
+<img width="2515" height="459" alt="image" src="https://github.com/user-attachments/assets/8d755bc2-ccfa-407c-890f-ec5512835a88" />
+<img width="1728" height="322" alt="image" src="https://github.com/user-attachments/assets/7fd088ab-5535-4c4a-8d26-c4695ea02a3c" />
+
 
 ## Časovna in prostorska zahtevnost
 
+#### Časovne zahtevnosti ni, saj ne gre za algoritem.
+#### Prostorska zahtevnost: PlatformIO približno 200–500 MB in Knjižnice	1–50 MB (odvisno od projekta)
+
 ## Vzdrževanje
+Ekipa: PlatformIO LLC <br>
+Odprtokodna platforma: glavna koda je na GitHubu
+Vzdrževalci: ekipa razvijalcev, ki redno posodablja:
+- Core (platformio-core)
+- IDE razširitve (VS Code, Atom)
+- Knjižnice in platforme (ESP32, Arduino, STM32…)
+
+<img width="1688" height="510" alt="image" src="https://github.com/user-attachments/assets/e1cac1f2-12b2-4bd3-8886-e4bfae6728be" />
+
+## Licenca
+Apache License <br>
+Version 2.0, January 2004 <br>
+http://www.apache.org/licenses/
 
 ## Osnove platformIO
 
